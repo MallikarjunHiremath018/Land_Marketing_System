@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Land Marketing System</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1 class="logo-text">LMS Admin</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="manage-properties.html">Manage Properties</a></li>
+                <li><a href="user-management.html">User Management</a></li>
+                <li><a href="login.html" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h1>Welcome, Admin!</h1>
+            <div class="dashboard-summary">
+                <div class="summary-item">
+                    <h2>Total Properties</h2>
+                    <p id="total-properties">0</p>
+                </div>
+                <div class="summary-item">
+                    <h2>Total Users</h2>
+                    <p id="total-users">0</p>
+                </div>
+                <div class="summary-item">
+                    <h2>Active Listings</h2>
+                    <p id="active-listings">0</p>
+                </div>
+            </div>
+
+            <h2>Recent Activity</h2>
+            <table id="activity-table">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Action</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Added a new property</td>
+                        <td>2024-11-25</td>
+                    </tr>
+                    <!-- More activity records will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Land Marketing System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
